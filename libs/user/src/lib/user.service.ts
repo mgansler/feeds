@@ -15,12 +15,12 @@ export class UserService {
     {
       userId: '0',
       username: 'root',
-      password: 'super_secret',
+      password: '$2b$10$QWVqIgTxl2468RVRikFZwuT1RV3F4WUbAZMfl/GzSdvLgYzUxy0a6',
     },
     {
       userId: '1',
       username: 'user',
-      password: 'just_secret',
+      password: '$2b$10$59V6GWP/zYRYeDqZm.WBzuX5tZfjnAqGr9bgwVoqL5HD24Q/OdM3e',
     },
   ]
 
