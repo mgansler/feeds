@@ -9,5 +9,6 @@ module.exports = {
     '<rootDir>/libs/database',
     '<rootDir>/libs/feed',
     '<rootDir>/libs/authentication',
+    '<rootDir>/libs/user',
   ],
 }

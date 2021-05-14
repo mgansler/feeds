@@ -1,0 +1,18 @@
+POST http://localhost:3333/api/authentication/login
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "just_secret"
+}
+
+###
+POST http://localhost:3333/api/authentication/login
+Content-Type: application/json
+
+{
+  "username": "root",
+  "password": "super_secret"
+}
+
+###
