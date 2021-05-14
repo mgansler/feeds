@@ -1,16 +1,25 @@
 import { Test, TestingModule } from '@nestjs/testing'
 import { PassportModule } from '@nestjs/passport'
+import { JwtModule } from '@nestjs/jwt'
 
 import { UserModule } from '@feeds/user'
 
 import { AuthenticationService } from './authentication.service'
+import { jwtConstants } from './authentication.constants'
 
 describe('AuthenticationService', () => {
   let service: AuthenticationService
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      imports: [UserModule, PassportModule],
+      imports: [
+        UserModule,
+        PassportModule,
+        JwtModule.register({
+          secret: jwtConstants.secret,
+          signOptions: { expiresIn: '3600s' },
+        }),
+      ],
       providers: [AuthenticationService],
     }).compile()
 
