@@ -51,7 +51,7 @@
     "@nrwl/linter": "12.2.0",
     "@nrwl/nest": "12.2.0",
     "@nrwl/node": "12.2.0",
-    "@nrwl/tao": "12.2.0",
+    "@nrwl/tao": "12.3.1",
     "@nrwl/workspace": "12.2.0",
     "@types/amqp-connection-manager": "^2.0.10",
     "@types/amqplib": "^0.5.17",
